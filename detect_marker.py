@@ -55,7 +55,7 @@ detector = aruco.ArucoDetector(aruco_dict, parameters)
 # cap = cv2.VideoCapture("http://192.168.81.124:8080/video")  # Replace with your actual IP
 
 # Option 3: DroidCam Wired USB connection (usually creates a virtual camera device)
-cap = cv2.VideoCapture(1)  # Try 1, 2, 3... until DroidCam works via USB
+cap = cv2.VideoCapture(0)  # Try 1, 2, 3... until DroidCam works via USB
 
 # ====================================================
 

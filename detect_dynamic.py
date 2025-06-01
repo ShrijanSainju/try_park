@@ -17,7 +17,7 @@ slot_map = {
 }
 
 # Start video capture (change to 0 for webcam or IP/video file)
-cap = cv2.VideoCapture(1)  # Or replace with your phone's IP cam URL
+cap = cv2.VideoCapture(0)  # Or replace with your phone's IP cam URL
 
 while True:
     ret, frame = cap.read()

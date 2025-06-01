@@ -83,17 +83,25 @@ cap = cv2.VideoCapture('parking_lot.mp4')
 
 # Define parking slot coordinates (x, y, w, h)
 parking_slots = [
-    (60, 0, 150, 60-4),
-    (60, 60-4, 150, 120-4),
-    (60, 120-4, 150, 180-4),
-    (60, 180-4, 150, 240-4),
-    (60, 240-4, 150, 300-4),
-    (60, 300-4, 150, 360-4),
-    (60, 360-4, 150, 420-4),
+    # x, y, w, h
+    (60, 0, 150, 57),
+    (60, 56, 150, 57),
+    (60, 115, 150, 59),
+    (60, 175, 150, 59),
+    (60, 235, 150, 59),
+    (60, 295, 150, 59),
+    (60, 355, 150, 59),
+    (212, 0, 150, 57),
+    (212, 56, 150, 57),
+    (212, 115, 150, 59),
+    (212, 175, 150, 59),
+    (212, 235, 150, 59),
+    (212, 295, 150, 59),
+    (212, 355, 150, 59),
 ]
 
 # Threshold ratio to decide occupancy based on pixel count (can tune)
-occupancy_threshold = 0.4  # Lower = more sensitive to cars
+occupancy_threshold = 0.35 # Lower = more sensitive to cars
 
 while True:
     ret, frame = cap.read()
